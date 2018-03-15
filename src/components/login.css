@@ -1,0 +1,48 @@
+.login-wrapper{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-wrapper{
+    max-width: 400px;
+    width: 100%;
+    background: #fafafa;
+    align-items: center;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+
+.login-form-wrapper>h2{
+    margin-top: 10px;
+}
+
+.login-title-wrapper{
+    width: 100%;
+    background: #2E7D32;
+    justify-content: center;
+    padding: 15px;
+}
+
+.login-title-wrapper>h1{
+    color: #fafafa;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.login-form{
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 15px 20px;
+}
+
+.login-form>input[type="submit"]{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+

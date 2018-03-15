@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    font-family: RobotoRegular, sans-serif;
+    color: #212121;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #EEEEEE;
+    overflow-y: scroll;
+}
+
+title {
+    display: none;
+}
+
+body, main, div, form, input, textarea, label, ul, li, header, nav, h1, h2, h3, button, section, p {
+    display: flex;
+}
+
+a {
+    display: inline-flex;
+}
+
+input[type="submit"], input[type="checkbox"], button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+label{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+label>input{
+    margin-top: 5px;
+}
+
+input{
+    position: relative;
+    border: none;
+    border-bottom: 2px solid #A5D6A7;
+    padding: 5px;
+    font-size: 16px;
+    transition: 0.2s all;
+}
+
+input::placeholder{
+    color: #BDBDBD;
+}
+
+
+input:focus {
+    outline: none;
+    border-color: #2E7D32;
+}
+
+input[type="submit"]{
+    width: auto;
+    max-width: 150px;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+
+    border: 2px solid #43A047;
+
+    background: transparent;
+
+    transition: 0.2s all;
+    font-family: RobotoMedium, sans-serif;
+    text-transform: uppercase;
+
+    color: #43A047;
+}
+
+
+input[type="submit"]:hover{
+    background: #2E7D32;
+    border-color: #2E7D32;
+
+    color: #f2f2f2;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    margin: 0;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+#root{
+    width: 100%;
+}
+
+.page-subtitle{
+    font-weight: 400;
+}
+
+
+
+
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url("./fonts/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: RobotoLight;
+    src: url("./fonts/Roboto-Light.ttf");
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url("./fonts/Roboto-Medium.ttf");
+}
+
