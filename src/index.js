@@ -5,6 +5,7 @@ import {isLoggedIn} from './utils/AuthService';
 import './index.css';
 import Login from './components/login';
 import Rooms from './components/rooms';
+import Room from './components/room';
 
 import registerServiceWorker from './registerServiceWorker';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
@@ -21,6 +22,7 @@ ReactDOM.render(
         <BrowserRouter>
             {isLoggedIn()
                 ?<Switch>
+                    <Route path='/:id' component={Room}/>
                     <Route path='/' component={Rooms}/>
                 </Switch>
 

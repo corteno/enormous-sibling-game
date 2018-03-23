@@ -49,3 +49,51 @@
     width: 40px;
     user-select: none;
 }
+
+.create-room-wrapper{
+    max-width: 400px;
+    width: 100%;
+    background: #f2f2f2;
+
+
+}
+
+.create-room-title{
+    min-height: 60px;
+    padding: 10px;
+    background: #2E7D32;
+    color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-room-form{
+    padding:15px;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.create-room-input{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.create-room-is-private{
+    margin-left: 5px;
+}
+
+.room-is-private-label{
+    justify-content: center;
+    margin: 10px 0 30px;
+    align-items: center;
+    color: #1B5E20;
+}
+
+.create-room img{
+    transition: 0.2s all;
+}
+
+.close-create-room.create-room img{
+    transform: rotateZ(45deg);
+}

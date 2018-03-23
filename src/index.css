@@ -49,31 +49,33 @@ label>input{
     margin-top: 5px;
 }
 
-input{
+input[type="text"], input[type="password"]{
     position: relative;
     border: none;
     border-bottom: 2px solid #A5D6A7;
     padding: 5px;
     font-size: 16px;
     transition: 0.2s all;
+    background: transparent;
 }
 
-input::placeholder{
+input[type="text"]::placeholder, input[type="password"]::placeholder{
     color: #BDBDBD;
 }
 
 
-input:focus {
+input[type="text"]:focus, input[type="password"]:focus {
     outline: none;
     border-color: #2E7D32;
 }
 
 input[type="submit"]{
-    width: auto;
     max-width: 150px;
     width: 100%;
-    padding: 10px;
+    height: 50px;
+    min-height: 50px;
     justify-content: center;
+    line-height: 21px;
 
     border: 2px solid #43A047;
 
@@ -90,9 +92,50 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background: #2E7D32;
     border-color: #2E7D32;
-
     color: #f2f2f2;
 }
+
+input[type="checkbox"]{
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid #4CAF50;
+
+    transition: 0.2s all;
+}
+
+input[type="checkbox"]:hover{
+    border-color: #2E7D32;
+}
+
+input[type="checkbox"]:focus{
+    outline: none;
+}
+
+input[type="checkbox"]:checked{
+    background: #2E7D32;
+    border-color: #2E7D32;
+    outline: none;
+}
+
+input[type="checkbox"]:checked:before{
+    position: absolute;
+    top: 2px;
+    content: '';
+    width: 9px;
+    height: 3px;
+
+    border-left: 2px solid #fafafa;
+    border-bottom: 2px solid #fafafa;
+
+    transform: rotateZ(-45deg);
+}
+
 
 ul {
     padding: 0;
@@ -128,6 +171,9 @@ p {
     font-weight: 400;
 }
 
+.box-shadow{
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
 
 
 

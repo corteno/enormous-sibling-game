@@ -8,7 +8,7 @@ class Header extends Component {
     
     render() {
         return (
-            <header className='header-wrapper'>
+            <header className={'header-wrapper ' + this.props.className}>
                 {this.props.children}
             </header>
         );

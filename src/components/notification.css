@@ -1,0 +1,60 @@
+.notification-wrapper {
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+
+    bottom: 20px;
+    padding: 0 20px;
+
+    justify-content: center;
+}
+
+.notification-content {
+    max-width: 400px;
+    width: auto;
+
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    background: #2E7D32;
+    opacity: 0;
+}
+
+.notification-message{
+    color: #fafafa;
+    text-align: center;
+}
+
+
+
+
+.display-notif {
+    animation-name: notif-display;
+    animation-duration: 0.2s;
+    opacity: 1;
+}
+
+.hide-notif{
+    animation-name: notif-hide;
+    animation-duration: 0.2s;
+    opacity: 0;
+}
+
+@keyframes notif-display {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes notif-hide {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+
+}

@@ -1,0 +1,109 @@
+.room-wrapper {
+    width: 100%;
+    align-items: center;
+}
+
+.room-content-wrapper {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+}
+
+.room-main-panel {
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    background: #fafafa;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.room-main-panel-title {
+    width: 100%;
+    padding: 15px 10px;
+    justify-content: center;
+    color: #fafafa;
+    background: #2E7D32;
+}
+
+.room-main-panel > h3 {
+    color: #212121;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 34px;
+}
+
+.word-to-guess {
+    position: relative;
+    padding: 0 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #2E7D32;
+    font-size: 40px;
+    text-align: center;
+}
+
+.word-to-guess:after {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 2px;
+    background: #2E7D32;
+    bottom: -5px;
+    left: 30%;
+}
+
+.countdown-wrapper {
+    border-radius: 50%;
+    transition: 0.2s all;
+    /*background-image: linear-gradient(0deg, #2E7D32 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #2E7D32 50%, #E0E0E0 50%, #E0E0E0);*/
+}
+
+.countdown {
+    margin: 4px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 28px;
+    color: #424242;
+    background: #fafafa;
+    font-family: RobotoMedium, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.guess-form{
+    left: 0;
+    margin: 0 20px;
+    width: calc(100% - 40px);
+    position: fixed;
+    bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.guess-input{
+    border: none !important;
+    width: 100%;
+    background: #fafafa !important;
+    color: #424242;
+    padding-left: 10px !important;
+}
+
+.guess-submit{
+    padding: 0 10px;
+    width: auto !important;
+    border: none !important;
+    background: #2E7D32 !important;
+    color: #f2f2f2 !important;
+    font-size: 14px;
+    text-transform: uppercase !important;
+
+}
+
